@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Priority | Websites for Nigerian Brands & Businesses</title>
+<meta name="description" content="Professional websites for Nigerian brands and businesses | Landing pages, online stores, and membership sites from ₦200,000, built fast and mobile-first.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="Favicon.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Priority">
+<meta property="og:title" content="Priority | Websites for Nigerian Brands & Businesses">
+<meta property="og:description" content="Professional websites for Nigerian brands and businesses | Landing pages, online stores, and membership sites from ₦200,000, built fast and mobile-first.">
+<meta property="og:image" content="OpenGraph%20Image.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Priority | Websites for Nigerian Brands & Businesses">
+<meta name="twitter:description" content="Professional websites for Nigerian brands and businesses | Landing pages, online stores, and membership sites from ₦200,000, built fast and mobile-first.">
+<meta name="twitter:image" content="OpenGraph%20Image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+<!-- Google Analytics (GA4) — replace G-XXXXXXXXXX with your real Measurement ID in BOTH places below -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<style>
+  :root {
+    --cream: #F7F1E6;
+    --cream-2: #F1E9D8;
+    --ink: #241407;
+    --ink-2: #3A2415;
+    --brown: #2A1608;
+    --brown-light: #4a2c14;
+    --white: #FFFFFF;
+    --border: #E3D9C4;
+    --text-muted: #6b5d4a;
+    --amber: #F2B134;
+    --radius-lg: 24px;
+    --radius-md: 14px;
+    --radius-sm: 8px;
+    --max-width: 1280px;
+    --pad: 80px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .display {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+
+  .wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--pad);
+  }
+
+  /* padding system: desktop 80px / tablet 40px / mobile 20px */
+  @media (max-width: 1024px) {
+    :root { --pad: 40px; }
+  }
+  @media (max-width: 640px) {
+    :root { --pad: 20px; }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* ---------- NAV ---------- */
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    z-index: 200;
+  }
+  .nav .logo {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+  }
+  .nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+  .nav ul li a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ink-2);
+    transition: opacity 0.15s ease;
+  }
+  .nav ul li a:hover { opacity: 0.6; }
+  .nav-links-wrap { display: flex; align-items: center; gap: 40px; }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--ink);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+  .hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.is-open span:nth-child(2) { opacity: 0; }
+  .hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  @media (max-width: 720px) {
+    .nav-links-wrap ul { display: none; }
+    .hamburger { display: flex; }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--cream);
+      z-index: 150;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-12px);
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    }
+    .mobile-menu.is-open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .mobile-menu a {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+  }
+  @media (min-width: 721px) {
+    .mobile-menu { display: none; }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative;
+    padding: var(--pad) 0 0;
+    overflow: hidden;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 48px;
+    align-items: start;
+    padding-bottom: 60px;
+  }
+  .hero h1 {
+    font-size: 56px;
+    line-height: 1.08;
+  }
+  .hero-copy p {
+    font-size: 17px;
+    color: var(--ink-2);
+    max-width: 460px;
+  }
+  .hero-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 26px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+    white-space: nowrap;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary {
+    background: var(--brown);
+    color: var(--cream);
+  }
+  .btn-primary:hover { background: var(--brown-light); }
+  .btn-secondary {
+    background: transparent;
+    border-color: var(--ink);
+    color: var(--ink);
+  }
+  .btn-secondary:hover { background: rgba(0,0,0,0.04); }
+
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 24px; }
+    .hero h1 { font-size: 38px; }
+  }
+
+  /* ---------- HERO MOCKUP STRIP + CURVE ---------- */
+  .hero-strip-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-strip {
+    display: flex;
+    width: max-content;
+    animation: marquee 28s linear infinite;
+  }
+  .hero-strip-wrap:hover .hero-strip {
+    animation-duration: 56s; /* 50% speed on hover, instead of pausing */
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-strip { animation: none; }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  .mockup-card {
+    flex: 0 0 280px;
+    aspect-ratio: 4 / 9;
+    border-radius: 0;
+    background: var(--cream-2);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 500;
+    overflow: hidden;
+    margin-right: 24px;
+    transition: transform 0.35s ease;
+  }
+  .mockup-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+    display: block;
+  }
+  .mockup-card:hover {
+    transform: scale(1.035);
+  }
+  @media (max-width: 900px) {
+    .mockup-card { flex-basis: 240px; }
+  }
+  @media (max-width: 640px) {
+    /* same aspect ratio, just a narrower card — no more odd fixed height */
+    .mockup-card { flex-basis: 200px; }
+  }
+
+  /* curve overlays: top dips down at center, bottom bulges up at center —
+     together they frame the image strip like a lens */
+  .curve-top, .curve-bottom {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .curve-top { top: -1px; }
+  .curve-bottom { bottom: -1px; }
+  .curve-top svg, .curve-bottom svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ---------- REQUIREMENTS ---------- */
+  .requirements {
+    padding: 100px 0 120px;
+  }
+  .req-header {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    margin-bottom: 64px;
+  }
+  .req-header h2 {
+    font-size: 34px;
+    line-height: 1.15;
+  }
+  .req-header .req-copy p {
+    font-size: 16px;
+    color: var(--ink-2);
+    padding-top: 4px;
+  }
+  .req-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .req-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: 32px;
+    transition: transform 0.3s cubic-bezier(.2,.7,.2,1), box-shadow 0.3s ease;
+  }
+  .req-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(36,20,7,0.10);
+  }
+  .req-card.full {
+    grid-column: 1 / -1;
+  }
+  .req-icon svg, .req-icon img { width: 28px; height: 28px; display: block; transition: transform 0.3s ease; }
+  .req-card:hover .req-icon svg, .req-card:hover .req-icon img {
+    transform: scale(1.1);
+  }
+  .req-icon {
+    margin-bottom: 22px;
+  }
+  .req-card h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  .req-card p {
+    font-size: 14.5px;
+    color: var(--ink-2);
+  }
+  .req-note {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--brown);
+    color: var(--cream);
+    border-radius: var(--radius-md);
+    padding: 22px 28px;
+    font-size: 15px;
+  }
+  .req-note svg { width: 22px; height: 22px; flex-shrink: 0; }
+
+  @media (max-width: 900px) {
+    .req-header { grid-template-columns: 1fr; gap: 20px; }
+    .req-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 640px) {
+    .req-grid { grid-template-columns: 1fr; }
+    .req-note { align-items: flex-start; }
+  }
+
+  /* ---------- PRICING ---------- */
+  .pricing {
+    padding: 100px 0 120px;
+  }
+  .pricing-header {
+    margin-bottom: 64px;
+  }
+  .pricing-header h2 {
+    font-size: 34px;
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  .pricing-header p {
+    font-size: 16px;
+    color: var(--ink-2);
+  }
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr 1fr;
+    gap: 24px;
+    align-items: stretch;
+    margin-bottom: 48px;
+  }
+  .price-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s cubic-bezier(.2,.7,.2,1), box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  .price-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 34px rgba(36,20,7,0.14);
+    border-color: var(--brown);
+  }
+  .price-card.featured:hover {
+    box-shadow: 0 18px 34px rgba(0,0,0,0.28);
+  }
+  .price-card.featured {
+    background: var(--brown);
+    border-color: var(--brown);
+    color: var(--cream);
+  }
+  .price-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .price-card.featured h3 { color: var(--cream); }
+  .price-card > p.desc {
+    font-size: 14.5px;
+    color: var(--ink-2);
+    margin-bottom: 22px;
+  }
+  .price-card.featured > p.desc { color: #d8c9b8; }
+  .price-old {
+    font-size: 17px;
+    color: var(--text-muted);
+    text-decoration: line-through;
+  }
+  .price-card.featured .price-old { color: #b39a80; }
+  .price-new {
+    font-size: 34px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 22px;
+  }
+  .price-cta {
+    display: block;
+    text-align: center;
+    padding: 13px 20px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1.5px solid var(--ink);
+    margin-bottom: 22px;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+  .price-cta:hover {
+    background: var(--ink);
+    color: var(--cream);
+    transform: translateY(-2px);
+  }
+  .price-card.featured .price-cta {
+    background: var(--cream);
+    color: var(--brown);
+    border-color: var(--cream);
+  }
+  .price-card.featured .price-cta:hover {
+    background: transparent;
+    color: var(--cream);
+    border-color: var(--cream);
+  }
+  .price-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin-bottom: 20px;
+  }
+  .price-card.featured .price-divider {
+    border-top-color: rgba(247,241,230,0.2);
+  }
+  .price-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .price-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+  }
+  .price-features svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: 1px; }
+  .pricing-footnote {
+    text-align: center;
+    font-size: 15px;
+    color: var(--ink-2);
+    max-width: 640px;
+    margin: 0 auto 20px;
+  }
+  .pricing-payment-note {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  @media (max-width: 900px) {
+    .pricing-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq {
+    padding: 100px 0 120px;
+  }
+  .faq-header h2 {
+    font-size: 34px;
+    line-height: 1.15;
+    margin-bottom: 64px;
+  }
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  .faq-item {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: 26px 28px;
+    transition: background 0.25s ease, box-shadow 0.25s ease;
+  }
+  .faq-item:hover {
+    box-shadow: 0 8px 20px rgba(36,20,7,0.08);
+  }
+  .faq-item summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    font-size: 16.5px;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-icon {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    transition: transform 0.2s ease;
+  }
+  .faq-icon img { width: 100%; height: 100%; display: block; }
+  .faq-icon .icon-minus { display: none; }
+  .faq-item[open] .faq-icon .icon-plus { display: none; }
+  .faq-item[open] .faq-icon .icon-minus { display: block; }
+  .faq-item:hover .faq-icon {
+    transform: scale(1.2);
+  }
+  .faq-item p {
+    font-size: 15px;
+    color: var(--ink-2);
+    margin-top: 14px;
+    padding-left: 34px;
+  }
+
+  @media (max-width: 900px) {
+    .faq-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- CTA BANNER ---------- */
+  .cta-banner {
+    padding: 0 0 40px;
+  }
+  .cta-inner {
+    background: var(--brown);
+    background-image:
+      repeating-linear-gradient(to right, rgba(247,241,230,0.08) 0, rgba(247,241,230,0.08) 1px, transparent 1px, transparent calc(100% / 7)),
+      repeating-linear-gradient(to bottom, rgba(247,241,230,0.08) 0, rgba(247,241,230,0.08) 1px, transparent 1px, transparent 20%);
+    border-radius: var(--radius-lg);
+    padding: 90px 40px;
+    text-align: center;
+  }
+  .cta-inner h2 {
+    color: var(--cream);
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .cta-inner p {
+    color: #d8c9b8;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: var(--cream);
+    color: var(--brown);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 16px 32px;
+    border-radius: 999px;
+    margin-bottom: 40px;
+    transition: transform 0.25s cubic-bezier(.2,.7,.2,1), box-shadow 0.25s ease;
+  }
+  .cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+  }
+  .cta-trust {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: var(--cream);
+    font-size: 14px;
+    font-weight: 600;
+    flex-wrap: wrap;
+  }
+  .cta-trust .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--cream);
+    opacity: 0.5;
+  }
+
+  @media (max-width: 640px) {
+    .cta-inner { padding: 60px 24px; }
+    .cta-inner h2 { font-size: 24px; }
+  }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    padding: 60px 0 40px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  .footer-brand .logo {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .footer-brand p {
+    font-size: 15px;
+    color: var(--ink-2);
+    max-width: 320px;
+  }
+  .footer-col h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .footer-col ul li a {
+    font-size: 14.5px;
+    color: var(--ink-2);
+  }
+  .footer-col ul li a:hover { color: var(--ink); }
+  .footer-bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+    letter-spacing: 0.03em;
+  }
+
+  @media (max-width: 900px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  /* ---------- WHY SECTION ---------- */
+  .why {
+    padding: 100px 0 120px;
+  }
+  .why-header {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    margin-bottom: 90px;
+  }
+  .eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+    display: block;
+  }
+  .why-header h2 {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+  .why-header .why-copy p {
+    font-size: 16px;
+    color: var(--ink-2);
+    padding-top: 4px;
+  }
+
+  .why-body {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  /* ---------- CARD STACK (desktop only) ---------- */
+  .stack-wrap {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+  }
+  .stack {
+    position: relative;
+    width: 300px;
+    height: 400px;
+  }
+  .stack-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background-color: var(--cream-2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    user-select: none;
+    overflow: hidden;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    will-change: transform;
+    touch-action: none;
+    box-shadow: 0 8px 20px rgba(36,20,7,0.12);
+  }
+  .stack-card.top { cursor: grab; }
+  .stack-card.top.dragging {
+    cursor: grabbing;
+    transition: none;
+  }
+
+  /* desktop only, as requested — hidden entirely on mobile/tablet */
+  @media (max-width: 900px) {
+    .stack-wrap { display: none; }
+  }
+
+  /* reasons grid */
+  .reasons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+  }
+  .reason {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--border);
+    transition: padding-left 0.3s ease;
+  }
+  .reasons-grid .reason:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+  .reason-icon {
+    margin-bottom: 16px;
+    transition: transform 0.3s cubic-bezier(.2,.7,.2,1);
+  }
+  .reason-icon svg, .reason-icon img { width: 28px; height: 28px; display: block; }
+  .reason h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+  }
+  .reason p {
+    font-size: 14.5px;
+    color: var(--ink-2);
+  }
+  .reason:hover {
+    padding-left: 8px;
+  }
+  .reason:hover .reason-icon {
+    transform: translateY(-3px);
+  }
+  .reason:hover h3 {
+    color: var(--brown);
+  }
+
+  @media (max-width: 900px) {
+    .why-header { grid-template-columns: 1fr; gap: 20px; }
+    .why-body { grid-template-columns: 1fr; gap: 60px; }
+    .reasons-grid { grid-template-columns: 1fr; }
+    .reasons-grid .reason:nth-last-child(-n+2) { border-bottom: 1px solid var(--border); }
+    .reasons-grid .reason:last-child { border-bottom: none; }
+  }
+
+  /* ---------- PROCESS ---------- */
+  .process {
+    position: relative;
+    padding: 100px 0 120px;
+    overflow: hidden;
+  }
+  .process-header {
+    position: relative;
+    max-width: 640px;
+    margin-bottom: 64px;
+  }
+  .process-header h2 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+  .process-header p {
+    font-size: 15.5px;
+    color: var(--ink-2);
+  }
+  .process-deco {
+    position: absolute;
+    top: -20px;
+    right: calc(var(--pad) * -1);
+    width: 260px;
+    height: 220px;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .process-card {
+    position: relative;
+    min-height: 340px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 1px 2px rgba(36,20,7,0.05);
+    transition: transform 0.3s cubic-bezier(.2,.7,.2,1), box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  .process-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(36,20,7,0.12);
+    border-color: var(--brown);
+  }
+  .process-media {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, #cbb98f 0%, #e7dcc2 55%, #f1e9d8 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .process-media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(247,241,230,0) 0%, var(--cream-2) 78%);
+  }
+  .process-num {
+    position: relative;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--cream);
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 20px;
+  }
+  .process-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+  }
+  .process-content h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+  .process-content p {
+    font-size: 14px;
+    color: var(--ink-2);
+    line-height: 1.45;
+  }
+
+  .timeline-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 22px;
+    padding: 20px;
+  }
+  .timeline-block p {
+    font-size: 15.5px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .btn-outline-sm {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 22px;
+    border-radius: 999px;
+    border: 1.5px solid var(--brown);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cream);
+    background: var(--brown);
+    transition: background 0.15s ease;
+  }
+  .btn-outline-sm:hover { background: var(--brown-light); }
+
+  @media (max-width: 1024px) {
+    .process-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 560px) {
+    .process-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- WORK SHOWCASE STRIP (click-to-expand accordion) ---------- */
+  .work-strip {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    overflow: hidden;
+  }
+  .work-panel {
+    flex: 1 1 0;
+    min-width: 50px;
+    height: 80vh;
+    max-height: 80vh;
+    background: var(--cream-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 500;
+    overflow: hidden;
+    cursor: pointer;
+    transition: flex 0.45s cubic-bezier(.2,.8,.2,1);
+  }
+  .work-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
+  .work-panel.active { flex: 4 1 0; }
+  .work-panel:hover { flex: 4 1 0; }
+
+  @media (max-width: 640px) {
+    .work-strip { gap: 20px; }
+    .work-panel { height: 380px; max-height: 380px; }
+  }
+
+  /* ---------- PAGE LOAD ANIMATION (hero) ---------- */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(22px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .load-in {
+    opacity: 0;
+    animation: fadeUp 0.8s cubic-bezier(.2,.7,.2,1) forwards;
+  }
+  .load-in-0 { animation-delay: 0s; }
+  .load-in-1 { animation-delay: 0.12s; }
+  .load-in-2 { animation-delay: 0.24s; }
+  .load-in-3 { animation-delay: 0.4s; }
+
+  /* ---------- SCROLL-INTO-VIEW REVEAL (everything else) ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s cubic-bezier(.2,.7,.2,1), transform 0.65s cubic-bezier(.2,.7,.2,1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* stagger direct siblings inside a revealed grid/row */
+  .reveal:nth-child(2)  { transition-delay: 0.06s; }
+  .reveal:nth-child(3)  { transition-delay: 0.12s; }
+  .reveal:nth-child(4)  { transition-delay: 0.18s; }
+  .reveal:nth-child(5)  { transition-delay: 0.24s; }
+  .reveal:nth-child(6)  { transition-delay: 0.30s; }
+  .reveal:nth-child(7)  { transition-delay: 0.36s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .load-in, .reveal {
+      animation: none !important;
+      transition: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+  <header class="wrap nav load-in load-in-0">
+    <div class="logo">/Priority</div>
+    <div class="nav-links-wrap">
+      <ul>
+        <li><a href="#why">Why</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#requirements">Requirement</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="#why">Why</a>
+    <a href="#process">Process</a>
+    <a href="#requirements">Requirement</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <h1 class="load-in load-in-1">Let's Build A Website For Your Business</h1>
+      <div class="hero-copy load-in load-in-2">
+        <p>A website that makes your business look as serious as it actually is. Built to make customers trust you before they even pick up the phone. From Lagos to Abuja to Port Harcourt, we've got you covered.</p>
+        <div class="hero-buttons">
+          <a href="https://wa.link/p63jyh" target="_blank" rel="noopener" class="btn btn-primary">Chat with Us</a>
+          <a href="#pricing" class="btn btn-secondary">Pricing</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-strip-wrap load-in load-in-3">
+      <div class="curve-top">
+        <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+          <path d="M0,0 L0,40 Q720,90 1440,40 L1440,0 Z" fill="#F7F1E6"/>
+          <path d="M0,40 Q720,90 1440,40" fill="none" stroke="#241407" stroke-width="1.5"/>
+        </svg>
+      </div>
+
+      <div class="hero-strip">
+        <div class="mockup-card"><img src="Hero%20Section%20Image%201.png" alt="Website design example 1" loading="lazy"></div>
+        <div class="mockup-card"><img src="Hero%20Section%20Image%202.png" alt="Website design example 2" loading="lazy"></div>
+        <div class="mockup-card"><img src="Hero%20Section%20Image%203.png" alt="Website design example 3" loading="lazy"></div>
+        <div class="mockup-card"><img src="Hero%20Section%20Image%204.png" alt="Website design example 4" loading="lazy"></div>
+        <div class="mockup-card"><img src="Hero%20Section%20Image%205.png" alt="Website design example 5" loading="lazy"></div>
+        <div class="mockup-card"><img src="Hero%20Section%20Image%206.png" alt="Website design example 6" loading="lazy"></div>
+        <!-- duplicate set — required for a seamless infinite loop, keep in sync with the set above -->
+        <div class="mockup-card" aria-hidden="true"><img src="Hero%20Section%20Image%201.png" alt="" loading="lazy"></div>
+        <div class="mockup-card" aria-hidden="true"><img src="Hero%20Section%20Image%202.png" alt="" loading="lazy"></div>
+        <div class="mockup-card" aria-hidden="true"><img src="Hero%20Section%20Image%203.png" alt="" loading="lazy"></div>
+        <div class="mockup-card" aria-hidden="true"><img src="Hero%20Section%20Image%204.png" alt="" loading="lazy"></div>
+        <div class="mockup-card" aria-hidden="true"><img src="Hero%20Section%20Image%205.png" alt="" loading="lazy"></div>
+        <div class="mockup-card" aria-hidden="true"><img src="Hero%20Section%20Image%206.png" alt="" loading="lazy"></div>
+      </div>
+
+      <div class="curve-bottom">
+        <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+          <path d="M0,90 L0,50 Q720,0 1440,50 L1440,90 Z" fill="#F7F1E6"/>
+          <path d="M0,50 Q720,0 1440,50" fill="none" stroke="#241407" stroke-width="1.5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="wrap">
+      <div class="why-header reveal">
+        <div>
+          <span class="eyebrow">/Why you need a website</span>
+          <h2>Every Serious Nigerian Business Needs a Website</h2>
+        </div>
+        <div class="why-copy">
+          <p>Instagram and WhatsApp are good for hustling. But if you want to be seen as a real, trusted brand, one that can win big clients, get bank loans, attend pitches, or simply stop losing customers to "let me check if this business is real", you need a website.</p>
+        </div>
+      </div>
+
+      <div class="why-body">
+        <div class="stack-wrap">
+          <div class="stack" id="cardStack"></div>
+        </div>
+        <div class="reasons-grid">
+          <div class="reason reveal">
+            <div class="reason-icon">
+              <img src="why_section_icon_1.svg" alt="" width="28" height="28">
+            </div>
+            <h3>Customers Trust You Faster</h3>
+            <p>A professional website makes people believe you're legit before they even message you. No more "Is this business real?" doubts.</p>
+          </div>
+
+          <div class="reason reveal">
+            <div class="reason-icon">
+              <img src="why_section_icon_2.svg" alt="" width="28" height="28">
+            </div>
+            <h3>You Stop Losing Sales to Instagram Wahala</h3>
+            <p>Instagram can restrict your page, delete your account, or hide your posts anytime. A website is yours forever, nobody can take it down.</p>
+          </div>
+
+          <div class="reason reveal">
+            <div class="reason-icon">
+              <img src="why_section_icon_3.svg" alt="" width="28" height="28">
+            </div>
+            <h3>You Look Bigger Than Your Competitors</h3>
+            <p>Many businesses in your industry still don't have a website. A clean, modern site instantly puts you ahead of them.</p>
+          </div>
+
+          <div class="reason reveal">
+            <div class="reason-icon">
+              <img src="why_section_icon_4.svg" alt="" width="28" height="28">
+            </div>
+            <h3>You Can Sell 24/7, Even While You Sleep</h3>
+            <p>Your website works for you at midnight, during traffic, during NEPA outage, customers can still browse, order, or book.</p>
+          </div>
+
+          <div class="reason reveal">
+            <div class="reason-icon">
+              <img src="why_section_icon_5.svg" alt="" width="28" height="28">
+            </div>
+            <h3>Banks, Investors &amp; Big Clients Take You Seriously</h3>
+            <p>Want a loan, a partnership, or a corporate client? The first thing they do is Google your business. Make sure something good shows up.</p>
+          </div>
+
+          <div class="reason reveal">
+            <div class="reason-icon">
+              <img src="why_section_icon_6.svg" alt="" width="28" height="28">
+            </div>
+            <h3>You Own Your Customer Data</h3>
+            <p>Unlike social media, your website lets you collect emails, numbers, and orders directly, no algorithm deciding who sees you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <div class="wrap">
+      <div class="process-header reveal">
+        <span class="eyebrow">/Process</span>
+        <h2>How We Work:<br>Simple, Fast, No Stress</h2>
+        <p>From first message to a fully working website, here's exactly what happens.</p>
+
+        <svg class="process-deco" viewBox="0 0 260 220" fill="none">
+          <path d="M40,180 C20,140 30,90 70,60 C110,30 150,50 160,90 C170,130 140,150 170,170 C190,183 220,175 230,150" stroke="#C9BB9C" stroke-width="1" opacity="0.7"/>
+          <path d="M55,170 C40,135 48,95 80,70 C112,45 145,62 152,95 C159,128 135,145 158,163 C176,177 202,170 212,148" stroke="#C9BB9C" stroke-width="1" opacity="0.5"/>
+          <circle cx="205" cy="45" r="3" fill="#C9BB9C"/>
+          <circle cx="225" cy="70" r="2" fill="#C9BB9C"/>
+          <circle cx="185" cy="30" r="1.5" fill="#C9BB9C"/>
+        </svg>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card reveal">
+          <div class="process-media" style="background-image:url('Process%20Card%20BG%20Image%201.png')"></div>
+          <div class="process-num">1</div>
+          <div class="process-content">
+            <h3>Discovery Call / Chat</h3>
+            <p>You tell us about your business, what you sell, and what you want your website to do. Takes 10–15 minutes on WhatsApp or a call.</p>
+          </div>
+        </div>
+
+        <div class="process-card reveal">
+          <div class="process-media" style="background-image:url('Process%20Card%20BG%20Image%202.png')"></div>
+          <div class="process-num">2</div>
+          <div class="process-content">
+            <h3>Proposal &amp; Payment</h3>
+            <p>We send you a simple proposal with price, timeline, and what's included. Work begins once a deposit is made.</p>
+          </div>
+        </div>
+
+        <div class="process-card reveal">
+          <div class="process-media" style="background-image:url('Process%20Card%20BG%20Image%203.png')"></div>
+          <div class="process-num">3</div>
+          <div class="process-content">
+            <h3>Design</h3>
+            <p>We design how your website will look, colors, layout, your logo, your brand. You review and approve before we build.</p>
+          </div>
+        </div>
+
+        <div class="process-card reveal">
+          <div class="process-media" style="background-image:url('Process%20Card%20BG%20Image%204.png')"></div>
+          <div class="process-num">4</div>
+          <div class="process-content">
+            <h3>Build</h3>
+            <p>We build the actual working website, fast loading, mobile-friendly, and structured to convert visitors into customers.</p>
+          </div>
+        </div>
+
+        <div class="process-card reveal">
+          <div class="process-media" style="background-image:url('Process%20Card%20BG%20Image%205.png')"></div>
+          <div class="process-num">5</div>
+          <div class="process-content">
+            <h3>Review &amp; Revisions</h3>
+            <p>You test everything. We make adjustments until you're fully satisfied.</p>
+          </div>
+        </div>
+
+        <div class="process-card reveal">
+          <div class="process-media" style="background-image:url('Process%20Card%20BG%20Image%206.png')"></div>
+          <div class="process-num">6</div>
+          <div class="process-content">
+            <h3>Launch</h3>
+            <p>Your website goes live with your domain name (e.g. www.yourbusiness.com). We hand over full access and show you how to manage it.</p>
+          </div>
+        </div>
+
+        <div class="process-card reveal">
+          <div class="process-media" style="background-image:url('Process%20Card%20BG%20Image%207.png')"></div>
+          <div class="process-num">7</div>
+          <div class="process-content">
+            <h3>Support</h3>
+            <p>We stay available for questions, small edits, and guidance after launch.</p>
+          </div>
+        </div>
+
+        <div class="timeline-block">
+          <p>Typical Timeline: 3 – 14 working days depending on the package.</p>
+          <a href="#pricing" class="btn-outline-sm">View Packages</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-strip" aria-label="Our recent work">
+    <div class="work-panel reveal"><img src="Hero%20Section%20Image%201.png" alt="Website design example 1" loading="lazy"></div>
+    <div class="work-panel reveal"><img src="Hero%20Section%20Image%202.png" alt="Website design example 2" loading="lazy"></div>
+    <div class="work-panel reveal"><img src="Hero%20Section%20Image%203.png" alt="Website design example 3" loading="lazy"></div>
+    <div class="work-panel reveal"><img src="Hero%20Section%20Image%204.png" alt="Website design example 4" loading="lazy"></div>
+    <div class="work-panel reveal"><img src="Hero%20Section%20Image%205.png" alt="Website design example 5" loading="lazy"></div>
+    <div class="work-panel reveal"><img src="Hero%20Section%20Image%206.png" alt="Website design example 6" loading="lazy"></div>
+  </section>
+
+  <section class="requirements" id="requirements">
+    <div class="wrap">
+      <div class="req-header reveal">
+        <div>
+          <span class="eyebrow">/Requirements</span>
+          <h2>What We'll Need From You to Get Started</h2>
+        </div>
+        <div class="req-copy">
+          <p>To avoid delays, here's what you should have ready, don't worry, we'll guide you if you're missing any of these.</p>
+        </div>
+      </div>
+
+      <div class="req-grid">
+        <div class="req-card reveal">
+          <div class="req-icon">
+            <img src="reuqirement_section_icon_1.svg" alt="" width="28" height="28">
+          </div>
+          <h3>Brand Assets</h3>
+          <p>Your business name, logo (or an idea of your brand colors), and any existing designs.</p>
+        </div>
+
+        <div class="req-card reveal">
+          <div class="req-icon">
+            <img src="reuqirement_section_icon_2.svg" alt="" width="28" height="28">
+          </div>
+          <h3>Products &amp; Services</h3>
+          <p>A list of your products or services with prices and images, or willingness for us to help style this.</p>
+        </div>
+
+        <div class="req-card reveal">
+          <div class="req-icon">
+            <img src="reuqirement_section_icon_3.svg" alt="" width="28" height="28">
+          </div>
+          <h3>Content &amp; Copy</h3>
+          <p>Business description, About Us info, contact details, and social media handles.</p>
+        </div>
+
+        <div class="req-card reveal">
+          <div class="req-icon">
+            <img src="reuqirement_section_icon_4.svg" alt="" width="28" height="28">
+          </div>
+          <h3>Domain Name</h3>
+          <p>A domain name preference (e.g. yourbrand.com), we can help you buy this if you don't have one.</p>
+        </div>
+
+        <div class="req-card reveal">
+          <div class="req-icon">
+            <img src="reuqirement_section_icon_5.svg" alt="" width="28" height="28">
+          </div>
+          <h3>E-Commerce Details</h3>
+          <p>Your product catalog, delivery/shipping terms, and preferred payment method (Paystack, Flutterwave, bank transfer).</p>
+        </div>
+
+        <div class="req-card reveal">
+          <div class="req-icon">
+            <img src="reuqirement_section_icon_6.svg" alt="" width="28" height="28">
+          </div>
+          <h3>Membership &amp; Subscription</h3>
+          <p>Your membership tiers, pricing, and what members get access to, for membership or subscription sites.</p>
+        </div>
+
+        <div class="req-card full reveal">
+          <div class="req-icon">
+            <img src="reuqirement_section_icon_7.svg" alt="" width="28" height="28">
+          </div>
+          <h3>Reference Websites</h3>
+          <p>Websites you like, even if not in your industry, helps us understand your taste and design direction.</p>
+        </div>
+      </div>
+
+      <div class="req-note reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#F7F1E6" stroke-width="1.8"><circle cx="12" cy="12" r="9.5"/><path d="M12 8v5"/><circle cx="12" cy="16" r="0.6" fill="#F7F1E6" stroke="none"/></svg>
+        <span>No logo yet? No proper product photos? No wahala, we can guide you or connect you with people who can help before we start building.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <div class="pricing-header reveal">
+        <span class="eyebrow">/Pricing</span>
+        <h2>Simple, Honest Pricing<br>No Hidden Charges</h2>
+        <p>Choose the package that fits your business. Prices are in Naira. Payment plans available.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <h3>Landing Page / Brand Page</h3>
+          <p class="desc">For businesses that need one powerful page to convert visitors, perfect for service providers, personal brands, and businesses validating an idea.</p>
+          <div class="price-old">₦250,000</div>
+          <div class="price-new">₦200,000</div>
+          <a href="https://wa.link/p63jyh" target="_blank" rel="noopener" class="price-cta">Get Started Now</a>
+          <hr class="price-divider">
+          <ul class="price-features">
+            <li><svg viewBox="0 0 24 24" fill="#241407"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Single-page professional website</li>
+            <li><svg viewBox="0 0 24 24" fill="#241407"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile &amp; desktop optimized</li>
+            <li><svg viewBox="0 0 24 24" fill="#241407"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Contact/WhatsApp integration</li>
+            <li><svg viewBox="0 0 24 24" fill="#241407"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Basic SEO setup (so people can find you on Google)</li>
+            <li><svg viewBox="0 0 24 24" fill="#241407"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Fast loading, modern design</li>
+            <li><svg viewBox="0 0 24 24" fill="#241407"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>1 round of free revisions</li>
+          </ul>
+        </div>
+
+        <div class="price-card featured reveal">
+          <h3>E-commerce Website</h3>
+          <p class="desc">For businesses that want to sell products online with full shopping features.</p>
+          <div class="price-old">₦400,000</div>
+          <div class="price-new">₦300,000</div>
+          <a href="https://wa.link/p63jyh" target="_blank" rel="noopener" class="price-cta">Get Started Now</a>
+          <hr class="price-divider">
+          <ul class="price-features">
+            <li><svg viewBox="0 0 24 24" fill="#F7F1E6"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#2A1608" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Full product catalog with categories</li>
+            <li><svg viewBox="0 0 24 24" fill="#F7F1E6"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#2A1608" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Shopping cart &amp; checkout</li>
+            <li><svg viewBox="0 0 24 24" fill="#F7F1E6"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#2A1608" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Payment integration (Paystack/Flutterwave)</li>
+            <li><svg viewBox="0 0 24 24" fill="#F7F1E6"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#2A1608" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Order &amp; inventory management</li>
+            <li><svg viewBox="0 0 24 24" fill="#F7F1E6"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#2A1608" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile &amp; desktop optimized</li>
+            <li><svg viewBox="0 0 24 24" fill="#F7F1E6"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#2A1608" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>SEO setup</li>
+            <li><svg viewBox="0 0 24 24" fill="#F7F1E6"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#2A1608" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>WhatsApp order/chat integration</li>
+            <li><svg viewBox="0 0 24 24" fill="#F7F1E6"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#2A1608" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Delivery/shipping zones with fees</li>
+            <li><svg viewBox="0 0 24 24" fill="#F7F1E6"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#2A1608" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Discount &amp; coupon codes</li>
+          </ul>
+        </div>
+
+        <div class="price-card reveal">
+          <h3>Business Website with Membership/Subscription</h3>
+          <p class="desc">For businesses offering premium content, courses, or gated services to paying members.</p>
+          <div class="price-new" style="margin-top: 27px;">Custom Pricing</div>
+          <a href="https://wa.link/p63jyh" target="_blank" rel="noopener" class="price-cta">Get Started Now</a>
+          <hr class="price-divider">
+          <ul class="price-features">
+            <li><svg viewBox="0 0 24 24" fill="#241407"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Multi-page business website - Up to 10</li>
+            <li><svg viewBox="0 0 24 24" fill="#241407"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Membership sign-up &amp; login system</li>
+            <li><svg viewBox="0 0 24 24" fill="#241407"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Subscription/payment gating</li>
+            <li><svg viewBox="0 0 24 24" fill="#241407"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Content or resource access control</li>
+            <li><svg viewBox="0 0 24 24" fill="#241407"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile &amp; desktop optimized</li>
+            <li><svg viewBox="0 0 24 24" fill="#241407"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>SEO setup</li>
+            <li><svg viewBox="0 0 24 24" fill="#241407"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>3 rounds of free revisions</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="pricing-footnote">All packages include domain name guidance, 1 year of hosting support, and a walkthrough on how to manage your website.</p>
+      <p class="pricing-payment-note">Payment plans: 60% to start, 40% on completion.</p>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="faq-header reveal">
+        <span class="eyebrow">/FAQ</span>
+        <h2>Questions Nigerian Business Owners Always Ask</h2>
+      </div>
+
+      <div class="faq-grid">
+        <div>
+          <details class="faq-item reveal" style="margin-bottom:24px;">
+            <summary>
+            <span class="faq-icon">
+              <img class="icon-plus" src="FAQ_Plus_Open_Icon.svg" alt="">
+              <img class="icon-minus" src="FAQ_Minus_Close_Icon.svg" alt="">
+            </span>I already have an Instagram/WhatsApp Business page, why do I need a website too?</summary>
+            <p>Social media pages can be restricted, hacked, or shut down anytime, and you don't fully control them. A website is 100% yours, builds more trust, and works even when social media is down or slow.</p>
+          </details>
+          <details class="faq-item reveal" style="margin-bottom:24px;">
+            <summary>
+            <span class="faq-icon">
+              <img class="icon-plus" src="FAQ_Plus_Open_Icon.svg" alt="">
+              <img class="icon-minus" src="FAQ_Minus_Close_Icon.svg" alt="">
+            </span>I don't have a logo or good product photos, can you still help me?</summary>
+            <p>Yes. We can guide you to affordable designers/photographers, or work with what you have and improve it during the design stage.</p>
+          </details>
+          <details class="faq-item reveal" style="margin-bottom:24px;">
+            <summary>
+            <span class="faq-icon">
+              <img class="icon-plus" src="FAQ_Plus_Open_Icon.svg" alt="">
+              <img class="icon-minus" src="FAQ_Minus_Close_Icon.svg" alt="">
+            </span>How long does it take to build my website?</summary>
+            <p>Landing pages: 3-5 working days. E-commerce and membership sites: 5-7 working days, depending on how quickly you provide content.</p>
+          </details>
+          <details class="faq-item reveal" style="margin-bottom:24px;">
+            <summary>
+            <span class="faq-icon">
+              <img class="icon-plus" src="FAQ_Plus_Open_Icon.svg" alt="">
+              <img class="icon-minus" src="FAQ_Minus_Close_Icon.svg" alt="">
+            </span>Do you only work with businesses in Lagos?</summary>
+            <p>No. We work with businesses across Nigeria, Lagos, Abuja, Port Harcourt, Ibadan and beyond. Everything is handled remotely via WhatsApp, call, and email.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>
+            <span class="faq-icon">
+              <img class="icon-plus" src="FAQ_Plus_Open_Icon.svg" alt="">
+              <img class="icon-minus" src="FAQ_Minus_Close_Icon.svg" alt="">
+            </span>How do I know you won't just collect my money and disappear?</summary>
+            <p>We work with a clear process, written proposal, and staged payments, you only pay the balance after you've seen and approved the work. You're in control at every stage.</p>
+          </details>
+        </div>
+
+        <div>
+          <details class="faq-item reveal" style="margin-bottom:24px;">
+            <summary>
+            <span class="faq-icon">
+              <img class="icon-plus" src="FAQ_Plus_Open_Icon.svg" alt="">
+              <img class="icon-minus" src="FAQ_Minus_Close_Icon.svg" alt="">
+            </span>How much will I pay in total, is there any hidden charge?</summary>
+            <p>No hidden charges. The price we quote is what you pay, split into two simple payments. The only extra costs are your domain name (~₦15,000-₦20,000/year) and hosting, after a year which we'll help you set up transparently.</p>
+          </details>
+          <details class="faq-item reveal" style="margin-bottom:24px;">
+            <summary>
+            <span class="faq-icon">
+              <img class="icon-plus" src="FAQ_Plus_Open_Icon.svg" alt="">
+              <img class="icon-minus" src="FAQ_Minus_Close_Icon.svg" alt="">
+            </span>Can I make payment in installments?</summary>
+            <p>Yes. Standard is 60% upfront to begin work, and 40% on completion, before the website goes live.</p>
+          </details>
+          <details class="faq-item reveal" style="margin-bottom:24px;">
+            <summary>
+            <span class="faq-icon">
+              <img class="icon-plus" src="FAQ_Plus_Open_Icon.svg" alt="">
+              <img class="icon-minus" src="FAQ_Minus_Close_Icon.svg" alt="">
+            </span>Will my website work well on mobile phone, since most of my customers use phone?</summary>
+            <p>Yes. Every website we build is designed mobile-first, since most Nigerian customers browse on their phones.</p>
+          </details>
+          <details class="faq-item reveal" style="margin-bottom:24px;">
+            <summary>
+            <span class="faq-icon">
+              <img class="icon-plus" src="FAQ_Plus_Open_Icon.svg" alt="">
+              <img class="icon-minus" src="FAQ_Minus_Close_Icon.svg" alt="">
+            </span>Can customers pay directly on my website?</summary>
+            <p>Yes, for E-commerce and Membership packages, we integrate Paystack and/or Flutterwave so customers can pay with card, transfer, or USSD.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>
+            <span class="faq-icon">
+              <img class="icon-plus" src="FAQ_Plus_Open_Icon.svg" alt="">
+              <img class="icon-minus" src="FAQ_Minus_Close_Icon.svg" alt="">
+            </span>What if I need changes after the website is live?</summary>
+            <p>Each package includes free revision rounds. After that, we offer affordable maintenance plans or one-off edit pricing.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner" id="contact">
+    <div class="wrap">
+      <div class="cta-inner reveal">
+        <h2>Ready to Give Your Business a Real Online Home?</h2>
+        <p>Message us now on WhatsApp and let's discuss your website, free consultation, no obligation.</p>
+        <a href="https://wa.link/p63jyh" target="_blank" rel="noopener" class="cta-btn">Chat With Us on WhatsApp</a>
+        <div class="cta-trust">
+          <span><img src="NG_Icon.svg" alt="Nigeria" style="width:16px;height:16px;vertical-align:-2px;margin-right:4px;"> Trusted by Nigerian brands &amp; businesses</span>
+          <span class="dot"></span>
+          <span>Fast turnaround</span>
+          <span class="dot"></span>
+          <span>Transparent pricing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand reveal">
+          <div class="logo">/Priority</div>
+          <p>Building websites that help Nigerian brands and businesses grow, look credible, and sell more, online.</p>
+        </div>
+
+        <div class="footer-col reveal">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#why">Why a Website</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#requirements">Requirement</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col reveal">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#pricing">Landing Pages / Brand Pages</a></li>
+            <li><a href="#pricing">E-commerce Websites</a></li>
+            <li><a href="#pricing">Membership &amp; Subscription Websites</a></li>
+            <li><a href="#">Website Redesign</a></li>
+            <li><a href="#">Website Editing/Fixing</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 PRIORITY TEAM. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+
+    // if the browser can't do IntersectionObserver, just show everything
+    if (!('IntersectionObserver' in window) || !els.length) {
+      els.forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+    els.forEach(function (el) { io.observe(el); });
+  })();
+
+  // hamburger / mobile menu toggle
+  (function () {
+    var btn = document.getElementById('hamburgerBtn');
+    var menu = document.getElementById('mobileMenu');
+    if (!btn || !menu) return;
+
+    function closeMenu() {
+      btn.classList.remove('is-open');
+      menu.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    function openMenu() {
+      btn.classList.add('is-open');
+      menu.classList.add('is-open');
+      btn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    btn.addEventListener('click', function () {
+      var isOpen = menu.classList.contains('is-open');
+      if (isOpen) { closeMenu(); } else { openMenu(); }
+    });
+
+    // close the menu after tapping a link
+    menu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+  })();
+
+  // ---- Card stack (Why section) — desktop only ----
+  // Ported from the swipe-stack component: scattered fan positions,
+  // pointer-drag on the top card, swipe-past-threshold cycles it to the back.
+  (function () {
+    const stackEl = document.getElementById('cardStack');
+    if (!stackEl) return;
+
+    // only run on desktop — mobile hides .stack-wrap via CSS anyway,
+    // this just avoids wiring up drag listeners on touch/mobile at all
+    if (!window.matchMedia('(min-width: 901px)').matches) return;
+
+    const config = {
+      cards: [
+        { src: 'Card%20Image%201.png' },
+        { src: 'Card%20Image%202.png' },
+        { src: 'Card%20Image%203.png' },
+        { src: 'Card%20Image%204.png' },
+        { src: 'Card%20Image%205.png' },
+        { src: 'Card%20Image%206.png' }
+      ],
+      swipeThreshold: 50
+    };
+
+    let order = config.cards.map((_, i) => i);
+
+    function getScatterOffset(position) {
+      if (position === 0) return { x: 0, y: 0, rot: 0 };
+      const side = position % 2 === 0 ? 1 : -1; // alternate right/left
+      const step = Math.ceil(position / 2);
+      return {
+        x: side * (14 + step * 10),
+        y: 4 + step * 5,
+        rot: side * (6 + step * 4)
+      };
+    }
+
+    function applyTransform(card, position, total, dragging, dragX, dragY) {
+      const scale = 1 - position * 0.035;
+      card.style.zIndex = total - position;
+
+      if (dragging) {
+        card.style.transform = `translate(${dragX}px, ${dragY}px) scale(1.05) rotate(0deg)`;
+      } else {
+        const o = getScatterOffset(position);
+        card.style.transform = `translate(${o.x}px, ${o.y}px) scale(${scale}) rotate(${o.rot}deg)`;
+      }
+    }
+
+    function makeDraggable(card) {
+      let startX = 0, startY = 0, dx = 0, dy = 0, dragging = false;
+
+      function onPointerDown(e) {
+        dragging = true;
+        card.classList.add('dragging');
+        card.setPointerCapture(e.pointerId);
+        startX = e.clientX;
+        startY = e.clientY;
+        dx = 0; dy = 0;
+      }
+      function onPointerMove(e) {
+        if (!dragging) return;
+        dx = e.clientX - startX;
+        dy = e.clientY - startY;
+        applyTransform(card, 0, order.length, true, dx, dy);
+      }
+      function onPointerUp() {
+        if (!dragging) return;
+        dragging = false;
+        card.classList.remove('dragging');
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance > config.swipeThreshold) {
+          order.push(order.shift());
+          render();
+        } else {
+          applyTransform(card, 0, order.length, false);
+        }
+      }
+
+      card.addEventListener('pointerdown', onPointerDown);
+      card.addEventListener('pointermove', onPointerMove);
+      card.addEventListener('pointerup', onPointerUp);
+      card.addEventListener('pointercancel', onPointerUp);
+    }
+
+    function render() {
+      stackEl.innerHTML = '';
+      const total = order.length;
+
+      order.forEach(function (cardIndex, position) {
+        const data = config.cards[cardIndex];
+        const card = document.createElement('div');
+        card.className = 'stack-card' + (position === 0 ? ' top' : '');
+        card.style.backgroundImage = `url(${data.src})`;
+
+        applyTransform(card, position, total, false);
+        stackEl.appendChild(card);
+
+        if (position === 0) makeDraggable(card);
+      });
+    }
+
+    render();
+  })();
+  </script>
+
+</body>
+</html>
